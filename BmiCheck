@@ -1,0 +1,59 @@
+package project;
+
+import java.lang.invoke.SwitchPoint;
+import java.util.Scanner;
+import jdk.nashorn.internal.ir.IfNode;
+
+public class BmiCheck{
+    
+    
+    
+    public static void main(String[] args)
+    {
+        Float weight, height, bmi;
+        
+        Scanner scan = new Scanner(System.in);
+        
+        String result = new String();
+        
+        System.out.println("키를 입력해주세요.");
+        height = scan.nextFloat();
+        
+        System.out.println("몸무게를 입력해주세요.");
+        weight = scan.nextFloat();
+        
+        float bmiheight = height / 100; 
+        
+        bmi = weight / (bmiheight * bmiheight);
+        
+        if(bmi <= 18.5)
+        {
+            result = "저체중";    
+        }
+        else if(bmi <= 23)
+        {
+            result = "정상";    
+        }
+        else if(bmi <= 25)
+        {
+            result = "과체중";
+        }
+        else if(bmi <= 30)
+        {
+            result = "경도비만";    
+        }
+        else if(bmi <= 35)
+        {
+            result = "중등도비만";    
+        }
+        else if(bmi > 35)
+        {
+            result = "고도비만";    
+        }
+    
+        
+        System.out.println("bmi 수치 : " + bmi + "\n" + result + "입니다.");
+        
+
+    }
+}
