@@ -1,0 +1,22 @@
+package project;
+
+public class MathCalculation {
+
+   
+    public static void main(String[] args) {
+        
+        
+        System.out.println(8+2); // 10
+        System.out.println(8-2); // 6
+        System.out.println(8*2); // 16
+        System.out.println(8/2); // 4
+        
+        System.out.println(Math.PI); // 3.141592
+        System.out.println(Math.floor(Math.PI)); // Math.floor(x); (x-1).0을 반환
+        System.out.println(Math.ceil(Math.PI)); // Math.ceil(x); (x+1).0을 반환
+        System.out.println(Math.abs(Math.PI)); // Math.abs(음수); -를 없앤 양수를 반환
+        System.out.println(Math.round(Math.PI)); // 반올림
+        
+    }
+
+}
